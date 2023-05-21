@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 20px 80px;
+  position: absolute;
+  width: 85vw;
+  top: 0;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  gap: 6vw;
+}
+
+.links li {
+  margin: 0;
+}
+
+.links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}

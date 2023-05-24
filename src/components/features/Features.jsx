@@ -111,6 +111,8 @@ function Features() {
           </div>
         </div>
         <div className="feature feature2">
+          <div className="blur"></div>
+
           <div className="right">
             <img src={feature2} alt="" />
           </div>

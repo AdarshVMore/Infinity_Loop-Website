@@ -42,3 +42,13 @@
   width: 350px;
   border-radius: 30px;
 }
+.work .blur {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  z-index: -9;
+  border-radius: 50%;
+  background-color: rgba(17, 0, 255, 0.492);
+  filter: blur(130px);
+  transform: translateX(-700px);
+}

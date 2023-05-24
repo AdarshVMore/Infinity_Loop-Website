@@ -9,21 +9,21 @@
   top: 0;
 }
 
-.logo img {
+.navbar .logo img {
   height: 50px;
 }
 
-.links {
+.navbar .links {
   list-style: none;
   display: flex;
   gap: 6vw;
 }
 
-.links li {
+.navbar .links li {
   margin: 0;
 }
 
-.links li a {
+.navbar .links li a {
   text-decoration: none;
   color: white;
   font-weight: 500;

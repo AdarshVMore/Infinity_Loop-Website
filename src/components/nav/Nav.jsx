@@ -19,7 +19,7 @@ const Nav = () => {
           <a href="#">Tokonomics</a>
         </li>
         <li>
-          <a href="#">DEX</a>
+          <a href="/dex">DEX</a>
         </li>
         <li>
           <a href="#">Loop Network</a>

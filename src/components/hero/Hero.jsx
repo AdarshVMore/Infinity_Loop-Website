@@ -8,11 +8,13 @@ function Hero() {
       <div className="left">
         <div className="heading days-one">
           <p>
-            Experience <br /> Racing in whole new Dimension
+            {/* Experience <br /> Racing in whole new Dimension */}
+            Rev your engines, <br /> race to the <br /> future with <br /> Loop
+            of Infinity
           </p>
         </div>
         <div className="sub-heading gray">
-          <p>Loops of Infinity puts You in the Driver's seat</p>
+          <p>where gaming meets blockchain and losses meet their match!</p>
         </div>
         <div className="btns">
           <button className="register-btn">Register</button>

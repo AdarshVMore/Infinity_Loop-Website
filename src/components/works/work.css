@@ -4,8 +4,7 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  margin: 7rem 7vw;
-  scroll-behavior: smooth;
+  padding: 7rem 7vw;
 }
 
 .work .heading {
@@ -28,15 +27,21 @@
 }
 
 .work .all-work .each-work {
+  max-width: 30%;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   gap: 0.7rem;
 }
-.work .each-work .text,
-.step {
+.work .each-work .text {
+  text-align: center;
   font-size: 15px;
+}
+.work .each-work .step {
+  font-size: 22px;
+  color: white;
+  font-weight: 600;
 }
 
 .work img {

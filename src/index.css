@@ -6,6 +6,7 @@ body {
   box-sizing: border-box;
   background-color: #000000;
   color: white;
+  overflow-x: hidden;
 }
 
 .days-one {
@@ -13,4 +14,7 @@ body {
 }
 .gray {
   color: gray;
+}
+html {
+  scroll-behavior: smooth;
 }

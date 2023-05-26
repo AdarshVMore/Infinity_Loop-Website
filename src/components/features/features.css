@@ -17,7 +17,7 @@
 .features .top .info {
   font-size: 15px;
   text-align: center;
-  width: 50%;
+  width: 60%;
 }
 
 .features .top .bottom {
@@ -32,6 +32,7 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  width: 33%;
 }
 .features .top .bottom .each .name {
   font-size: large;
@@ -117,11 +118,11 @@
   width: 100%;
 }
 .feature2 .left {
-  margin-left: 5vw;
+  margin-left: 3vw;
 }
 .features .each-feature .blur {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   position: absolute;
   z-index: -9;
   border-radius: 50%;

@@ -8,6 +8,7 @@
   width: 85vw;
   top: 0;
   scroll-behavior: smooth;
+  transition: 1s ease-in-out;
 }
 
 .navbar .logo img {
@@ -17,7 +18,7 @@
 .navbar .links {
   list-style: none;
   display: flex;
-  gap: 6vw;
+  gap: 5vw;
 }
 
 .navbar .links li {

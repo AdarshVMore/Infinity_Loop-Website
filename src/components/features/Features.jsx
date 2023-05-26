@@ -13,8 +13,9 @@ function Features() {
       <div className="top">
         <div className="heading days-one">Features</div>
         <p className="info gray">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero magnam
-          veniam accusantium sint odio optio dolore mollitia,
+          . Players can race against each other, compete in tournaments, and win
+          rewards in the form of cryptocurrency tokens, which can be traded or
+          used within the game ecosystem
         </p>
         <div className="bottom">
           <div className="each 1">
@@ -23,8 +24,7 @@ function Features() {
             </div>
             <div className="name">Earn Crypto</div>
             <div className="info gray">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reiciendis porro
+              Players can earn cryptocurrencies while racing in the game
             </div>
           </div>
           <div className="each 1">
@@ -33,8 +33,7 @@ function Features() {
             </div>
             <div className="name">Decentralised</div>
             <div className="info gray">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reiciendis porro
+              The game operates on a decentralized blockchain network
             </div>
           </div>
           <div className="each 1">
@@ -43,8 +42,7 @@ function Features() {
             </div>
             <div className="name">Rewards</div>
             <div className="info gray">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reiciendis porro
+              Players receive various rewards, including cryptocurrencies
             </div>
           </div>
           <div className="blur"></div>
@@ -56,8 +54,9 @@ function Features() {
             <div className="feature-no gray">FEATURE 1</div>
             <div className="feature-name days-one">Loss proof Dex</div>
             <div className="feature-info">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae
-              unde nobis non impedit laboriosam exercitationem.
+              covers up to 60% of user losses in case of market volatility. This
+              ensures that players can enjoy the game without worrying about
+              losing their investments
             </div>
             <div className="feature-grid">
               <div className="feature-grid-each">
@@ -65,9 +64,10 @@ function Features() {
                   <img src={feature} alt="" />
                 </div>
                 <div className="feature-text">
-                  <div className="heading">Lorem ipsum dolor sit.</div>
+                  <div className="heading">Non-Custodial Wallets</div>
                   <div className="info">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Trade securely from your own wallet, reducing centralized
+                    exchange risks
                   </div>
                 </div>
               </div>
@@ -76,9 +76,9 @@ function Features() {
                   <img src={feature} alt="" />
                 </div>
                 <div className="feature-text">
-                  <div className="heading">Lorem ipsum dolor sit.</div>
+                  <div className="heading">Decentralized Order Matching</div>
                   <div className="info">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Directly trade on the blockchain, eliminating intermediaries
                   </div>
                 </div>
               </div>
@@ -87,9 +87,9 @@ function Features() {
                   <img src={feature} alt="" />
                 </div>
                 <div className="feature-text">
-                  <div className="heading">Lorem ipsum dolor sit.</div>
+                  <div className="heading">Multi-Signature Security</div>
                   <div className="info">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Enhanced protection with multi-signature technology.
                   </div>
                 </div>
               </div>
@@ -98,9 +98,10 @@ function Features() {
                   <img src={feature} alt="" />
                 </div>
                 <div className="feature-text">
-                  <div className="heading">Lorem ipsum dolor sit.</div>
+                  <div className="heading">On-Chain Auditing</div>
                   <div className="info">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Transparent transaction records on the blockchain for
+                    trustworthy auditing.
                   </div>
                 </div>
               </div>
@@ -122,8 +123,8 @@ function Features() {
               Loop Network Integration
             </div>
             <div className="feature-info">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-              cupiditate
+              This technology allows for fast and efficient gameplay, without
+              compromising on security or decentralization
             </div>
             <div className="feature-grid">
               <div className="feature-grid-each">
@@ -131,9 +132,10 @@ function Features() {
                   <img src={feature} alt="" />
                 </div>
                 <div className="feature-text">
-                  <div className="heading">Lorem ipsum dolor sit.</div>
+                  <div className="heading">Cross-Chain Compatibility</div>
                   <div className="info">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Interact with multiple blockchain networks for asset
+                    transfer and data exchange.{" "}
                   </div>
                 </div>
               </div>
@@ -142,9 +144,10 @@ function Features() {
                   <img src={feature} alt="" />
                 </div>
                 <div className="feature-text">
-                  <div className="heading">Lorem ipsum dolor sit.</div>
+                  <div className="heading">Interoperability</div>
                   <div className="info">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Connect and communicate between different blockchain
+                    networks for seamless information sharing.{" "}
                   </div>
                 </div>
               </div>
@@ -153,9 +156,10 @@ function Features() {
                   <img src={feature} alt="" />
                 </div>
                 <div className="feature-text">
-                  <div className="heading">Lorem ipsum dolor sit.</div>
+                  <div className="heading">Protocol Agnostic</div>
                   <div className="info">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Support various blockchain protocols, enabling integration
+                    with diverse networks.{" "}
                   </div>
                 </div>
               </div>
@@ -164,9 +168,10 @@ function Features() {
                   <img src={feature} alt="" />
                 </div>
                 <div className="feature-text">
-                  <div className="heading">Lorem ipsum dolor sit.</div>
+                  <div className="heading">Scalability and Performance</div>
                   <div className="info">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    ptimize integration for efficient operations across
+                    different blockchain environments.{" "}
                   </div>
                 </div>
               </div>

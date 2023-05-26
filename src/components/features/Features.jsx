@@ -13,7 +13,7 @@ function Features() {
       <div className="top">
         <div className="heading days-one">Features</div>
         <p className="info gray">
-          . Players can race against each other, compete in tournaments, and win
+          Players can race against each other, compete in tournaments, and win
           rewards in the form of cryptocurrency tokens, which can be traded or
           used within the game ecosystem
         </p>

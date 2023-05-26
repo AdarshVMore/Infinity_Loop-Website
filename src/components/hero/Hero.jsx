@@ -16,6 +16,9 @@ function Hero() {
         <div className="sub-heading gray">
           <p>where gaming meets blockchain and losses meet their match!</p>
         </div>
+        <div className="hide-img">
+          <img src={car} alt="car" />
+        </div>
         <div className="btns">
           <button className="register-btn">Register</button>
           <button className="join-btn">Join Waitlist</button>

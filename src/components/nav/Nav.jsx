@@ -41,7 +41,7 @@ const Nav = () => {
           <a href="#tokonomics">Tokonomics</a>
         </li>
         <li>
-          <a href="/dex">DEX</a>
+          <a href="/dex">LoopSwap</a>
         </li>
         <li>
           <a href="#">Loop Network</a>

@@ -158,4 +158,21 @@
   .each-feature .feature .right {
     display: none;
   }
+  .feature2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  .feature2 .left .feature-name {
+    text-align: center;
+  }
+  .feature2 .left {
+    margin-left: 0vw;
+  }
+
+  .feature .feature-info {
+    text-align: center;
+  }
 }

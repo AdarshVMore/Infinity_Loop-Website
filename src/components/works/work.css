@@ -5,6 +5,7 @@
   justify-content: center;
   gap: 2rem;
   margin: 7rem 7vw;
+  scroll-behavior: smooth;
 }
 
 .work .heading {

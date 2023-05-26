@@ -82,6 +82,20 @@
   padding: 3px 15px 0 10px;
 }
 
+.swaping-input .swap-from .middle input {
+  background: transparent;
+  padding: 0;
+  border: none;
+  color: white;
+  font-size: 20px;
+  outline: none;
+  text-align: end;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
 .swaping-input .swap-from .middle button,
 .swaping-input .swap-to .middle button {
   padding: 3px 7px;
@@ -165,4 +179,71 @@
   color: #6983aa;
   font-size: 15px;
   font-weight: 500;
+}
+
+/* ==========================================  SHOW CRYPTO OPTIONS  ========================================== */
+
+.crypto-options-from {
+  position: absolute;
+  z-index: 5;
+  background-color: #131823;
+  min-width: 100px;
+  width: 535px;
+  border-radius: 15px;
+  transform: translateX(-15px);
+  max-height: 70vh;
+  overflow-y: auto;
+}
+.crypto-options-from .top {
+  padding: 10px 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.crypto-options-from .top .text {
+  font-weight: 600;
+  font-size: 20px;
+}
+.crypto-options-from hr {
+  opacity: 0.2;
+  margin-bottom: 25px;
+}
+.crypto-options-from .bottom ul {
+  padding: 0;
+
+  margin: 0px;
+}
+.crypto-options-from .bottom ul li {
+  padding: 15px 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.crypto-options-from .bottom ul li .left {
+  display: flex;
+  gap: 1rem;
+}
+.crypto-options-from .bottom ul li:hover {
+  background-color: #0e121b;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  display: hidden;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

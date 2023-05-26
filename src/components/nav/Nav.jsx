@@ -10,13 +10,13 @@ const Nav = () => {
       </div>
       <ul className="links">
         <li>
-          <a href="#">How it works</a>
+          <a href="#works">How it works</a>
         </li>
         <li>
-          <a href="#">Roadmap</a>
+          <a href="#roadmap">Roadmap</a>
         </li>
         <li>
-          <a href="#">Tokonomics</a>
+          <a href="#tokonomics">Tokonomics</a>
         </li>
         <li>
           <a href="/dex">DEX</a>

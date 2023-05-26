@@ -4,10 +4,59 @@ import { VscSettings } from "react-icons/vsc";
 import { TbReload } from "react-icons/tb";
 import { BiDownArrowAlt } from "react-icons/bi";
 import { RiArrowDropDownLine } from "react-icons/ri";
+import { MdArrowBackIos } from "react-icons/md";
 import "./simpleswap.css";
 
 function SimpleSwap() {
   const [selectedLink, setSelectedLink] = useState(0);
+  const [showOptions_from, setShowOptions_from] = useState(false);
+  const [showOptions_to, setShowOptions_to] = useState(false);
+
+  const [x, setX] = useState(0);
+  const [y, setY] = useState(0);
+
+  const cryptoApi = [
+    {
+      logo: "L",
+      name: "ETH",
+    },
+    {
+      logo: "L",
+      name: "BTC",
+    },
+    {
+      logo: "L",
+      name: "DOG",
+    },
+    {
+      logo: "L",
+      name: "USDC",
+    },
+    {
+      logo: "L",
+      name: "USDT",
+    },
+    {
+      logo: "L",
+      name: "USDT",
+    },
+    {
+      logo: "L",
+      name: "USDT",
+    },
+    {
+      logo: "L",
+      name: "USDT",
+    },
+    {
+      logo: "L",
+      name: "USDT",
+    },
+    {
+      logo: "L",
+      name: "USDT",
+    },
+  ];
 
   return (
     <div className="simple-swap">
@@ -69,13 +118,18 @@ function SimpleSwap() {
             </p>
           </div>
           <div className="middle">
-            <button>
+            <button
+              onClick={() => {
+                setShowOptions_from(true);
+              }}
+            >
               <span className="crypto-icon"></span>
               <span className="crypto-name">
-                WETH <RiArrowDropDownLine />
+                {cryptoApi[x].name}
+                <RiArrowDropDownLine />
               </span>
             </button>
-            <p>1819.054</p>
+            <input type="number" />
           </div>
 
           <div className="bottom">
@@ -94,10 +148,15 @@ function SimpleSwap() {
             </p>
           </div>
           <div className="middle">
-            <button>
+            <button
+              onClick={() => {
+                setShowOptions_to(true);
+              }}
+            >
               <span className="crypto-icon"></span>
               <span className="crypto-name">
-                WETH <RiArrowDropDownLine />
+                {cryptoApi[y].name}
+                <RiArrowDropDownLine />
               </span>
             </button>
             <p>1819.054</p>
@@ -118,6 +177,90 @@ function SimpleSwap() {
       <div className="swap-button">
         <button>Insufficient WETH Balance</button>
       </div>
+
+      {showOptions_from && (
+        <div className="crypto-options-from">
+          <div className="top">
+            <div
+              className="back"
+              onClick={() => {
+                setShowOptions_from(false);
+              }}
+            >
+              <MdArrowBackIos />
+            </div>
+            <div className="text">Select a Token</div>
+            <div className="none"></div>
+          </div>
+          <hr />
+          <div className="bottom">
+            {cryptoApi.map((item, index) => (
+              <ul>
+                <li
+                  key={index}
+                  onClick={() => {
+                    setX(index);
+                    setShowOptions_from(false);
+                  }}
+                >
+                  <div className="left">
+                    <div className="logo">{item.logo}</div>
+                    <div className="inner-right">
+                      <div className="name">
+                        <p className="crypto-name">{item.name}</p>
+                        <p>{`0 ${item.name}`}</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="right">$0</div>
+                </li>
+              </ul>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {showOptions_to && (
+        <div className="crypto-options-from">
+          <div className="top">
+            <div
+              className="back"
+              onClick={() => {
+                setShowOptions_to(false);
+              }}
+            >
+              <MdArrowBackIos />
+            </div>
+            <div className="text">Select a Token</div>
+            <div className="none"></div>
+          </div>
+          <hr />
+          <div className="bottom">
+            {cryptoApi.map((item, index) => (
+              <ul>
+                <li
+                  key={index}
+                  onClick={() => {
+                    setY(index);
+                    setShowOptions_to(false);
+                  }}
+                >
+                  <div className="left">
+                    <div className="logo">{item.logo}</div>
+                    <div className="inner-right">
+                      <div className="name">
+                        <p className="crypto-name">{item.name}</p>
+                        <p>{`0 ${item.name}`}</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="right">$0</div>
+                </li>
+              </ul>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 }

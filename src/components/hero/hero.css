@@ -4,7 +4,7 @@
   justify-content: center;
   /* gap: 1rem; */
   height: 100vh;
-  margin: 0 7vw;
+  margin: 3vh 7vw 0 7vw;
   gap: 4rem;
 }
 
@@ -17,7 +17,7 @@
 .hero .heading p {
   font-size: 65px;
   margin: 0 0 20px 0;
-  line-height: 80px;
+  line-height: 10vh;
 }
 
 .hero .sub-heading p {
@@ -44,7 +44,7 @@
 
 .hero .right img {
   transform: translateX(-50px);
-  height: 280px;
+  height: 400px;
 }
 .hero .right .blur {
   width: 400px;

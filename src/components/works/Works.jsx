@@ -6,7 +6,7 @@ import work3 from "../../assets/images/work3.jpg";
 
 function Works() {
   return (
-    <div className="work">
+    <div className="work" id="works">
       <div className="blur"></div>
 
       <div className="heading days-one">How it Works</div>

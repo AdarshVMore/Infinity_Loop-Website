@@ -8,9 +8,13 @@
   width: 85vw;
   top: 0;
   scroll-behavior: smooth;
-  transition: 1s ease-in-out;
 }
-
+.navbar .toggle-open {
+  display: none;
+}
+.navbar .links .toggle-close {
+  display: none;
+}
 .navbar .logo img {
   height: 50px;
 }
@@ -18,7 +22,10 @@
 .navbar .links {
   list-style: none;
   display: flex;
-  gap: 5vw;
+  gap: 3vw;
+}
+.hide {
+  display: none;
 }
 
 .navbar .links li {
@@ -29,4 +36,35 @@
   text-decoration: none;
   color: white;
   font-weight: 500;
+}
+
+@media (max-width: 1100px) {
+  .navbar .toggle-open {
+    display: block;
+    transition: 0.3s ease-in-out;
+    position: absolute;
+    right: 80px;
+    top: 30px;
+  }
+  .navbar .links .toggle-close {
+    display: block;
+  }
+  .navbar .links {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    right: 30px;
+    top: 10px;
+    transform: translateX(250px);
+    transition: 0.3s ease-in-out;
+  }
+  .navbar .active {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    right: 30px;
+    top: 10px;
+    transform: translateX(0px);
+    transition: 0.3s ease-in-out;
+  }
 }

@@ -58,6 +58,9 @@ function Features() {
               ensures that players can enjoy the game without worrying about
               losing their investments
             </div>
+            <div className="hide-img">
+              <img src={feature1} alt="" />
+            </div>
             <div className="feature-grid">
               <div className="feature-grid-each">
                 <div className="feature-svg">
@@ -125,6 +128,9 @@ function Features() {
             <div className="feature-info">
               This technology allows for fast and efficient gameplay, without
               compromising on security or decentralization
+            </div>
+            <div className="hide-img">
+              <img src={feature2} alt="" />
             </div>
             <div className="feature-grid">
               <div className="feature-grid-each">

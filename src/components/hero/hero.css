@@ -5,7 +5,7 @@
   /* gap: 1rem; */
   height: 100vh;
   padding: 3vh 5vw 0 5vw;
-  gap: 1rem;
+  gap: 10vw;
 }
 
 .hero .left {
@@ -15,7 +15,7 @@
 }
 
 .hero .heading p {
-  font-size: 3vw;
+  font-size: 3.5vw;
   margin: 0 0 20px 0;
   /* line-height: 10vh; */
 }
@@ -71,19 +71,19 @@
 
 .hero .right img {
   transform: translateX(-50px);
-  height: 30vw;
+  height: 16vw;
   position: relative;
   z-index: -5;
 }
 .hero .right .blur {
-  width: 400px;
-  height: 400px;
+  width: 20vw;
+  height: 20vw;
   position: absolute;
   z-index: -9;
   border-radius: 50%;
   background-color: rgba(255, 0, 0, 0.492);
   filter: blur(130px);
-  transform: translateY(-350px) translateX(130px);
+  transform: translateY(-350px) translateX(0vw);
 }
 
 @media (max-width: 1250px) {

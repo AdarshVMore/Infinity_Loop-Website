@@ -8,13 +8,18 @@ function Hero() {
       <div className="left">
         <div className="heading days-one">
           <p>
-            {/* Experience <br /> Racing in whole new Dimension */}
-            Rev your engines, <br /> race to the <br /> future with <br /> Loop
-            of Infinity
+            <span>
+              Rev your engines, <br /> race to the <br /> future with <br />{" "}
+              Loop of Infinity
+            </span>
           </p>
         </div>
         <div className="sub-heading gray">
-          <p>where gaming meets blockchain and losses meet their match!</p>
+          <p>
+            <span>
+              where gaming meets blockchain and losses meet their match!
+            </span>
+          </p>
         </div>
         <div className="hide-img">
           <img src={car} alt="car" />

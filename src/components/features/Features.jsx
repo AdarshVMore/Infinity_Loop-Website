@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import "./features.css";
 import svg1 from "../../assets/images/Icon.svg";
 import svg2 from "../../assets/images/Icon-1.svg";
@@ -7,18 +7,159 @@ import feature from "../../assets/images/Feature Icon with circle.svg";
 import feature1 from "../../assets/images/feature1.png";
 import feature2 from "../../assets/images/feature2.jpg";
 
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+gsap.registerPlugin(ScrollTrigger);
+
 function Features() {
+  const featureRef = useRef(null);
+  const eachFeatureRef = useRef(null);
+  const feature2_ref = useRef(null);
+  const feature1_ref = useRef(null);
+  useEffect(() => {
+    const featureHeader = featureRef.current;
+    const portArticle = eachFeatureRef.current;
+    const feature1 = feature2_ref.current;
+    const feature2 = feature1_ref.current;
+
+    gsap.fromTo(
+      ".featureHeader",
+      {
+        opacity: 0,
+        y: 10,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        stagger: 0.1,
+        scrollTrigger: {
+          trigger: featureHeader,
+          start: "top 70%",
+          end: "bottom 20%",
+          toggleActions: "restart reverse restart reverse",
+          // markers: true,
+        },
+      }
+    );
+    gsap.fromTo(
+      ".each_Feature",
+      {
+        opacity: 0,
+        y: 15,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        stagger: 0.3,
+        scrollTrigger: {
+          trigger: portArticle,
+          start: "top 70%",
+          end: "bottom 20%",
+          toggleActions: "restart reverse restart reverse",
+          // markers: true,
+        },
+      }
+    );
+    gsap.fromTo(
+      ".feature1_Img",
+      {
+        opacity: 0,
+        y: 25,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.7,
+        stagger: 0.3,
+        delay: 0.3,
+
+        scrollTrigger: {
+          trigger: feature2,
+          start: "top 70%",
+          end: "bottom 20%",
+          toggleActions: "restart reverse restart reverse",
+          // markers: true,
+        },
+      }
+    );
+    gsap.fromTo(
+      ".feature1_Info",
+      {
+        opacity: 0,
+        x: -15,
+      },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        stagger: 0.3,
+        scrollTrigger: {
+          trigger: feature2,
+          start: "top 70%",
+          end: "bottom 20%",
+          toggleActions: "restart reverse restart reverse",
+          // markers: true,
+        },
+      }
+    );
+    gsap.fromTo(
+      ".feature2Img",
+      {
+        opacity: 0,
+        y: 25,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.7,
+        stagger: 0.3,
+        delay: 0.3,
+
+        scrollTrigger: {
+          trigger: feature1,
+          start: "top 70%",
+          end: "bottom 20%",
+          toggleActions: "restart reverse restart reverse",
+          // markers: true,
+        },
+      }
+    );
+    gsap.fromTo(
+      ".feature2Info",
+      {
+        opacity: 0,
+        x: 25,
+      },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 0.7,
+        stagger: 0.3,
+        delay: 0.3,
+
+        scrollTrigger: {
+          trigger: feature1,
+          start: "top 70%",
+          end: "bottom 20%",
+          toggleActions: "restart reverse restart reverse",
+          // markers: true,
+        },
+      }
+    );
+  });
   return (
-    <div className="features">
-      <div className="top">
+    <div className="features" ref={featureRef}>
+      <div className="top featureHeader">
         <div className="heading days-one">Features</div>
         <p className="info gray">
           Players can race against each other, compete in tournaments, and win
           rewards in the form of cryptocurrency tokens, which can be traded or
           used within the game ecosystem
         </p>
-        <div className="bottom">
-          <div className="each 1">
+        <div className="bottom " ref={eachFeatureRef}>
+          <div className="each 1 each_Feature">
             <div className="img">
               <img src={svg1} alt="" />
             </div>
@@ -27,7 +168,7 @@ function Features() {
               Players can earn cryptocurrencies while racing in the game
             </div>
           </div>
-          <div className="each 1">
+          <div className="each 1 each_Feature">
             <div className="img">
               <img src={svg2} alt="" />
             </div>
@@ -36,7 +177,7 @@ function Features() {
               The game operates on a decentralized blockchain network
             </div>
           </div>
-          <div className="each 1">
+          <div className="each 1 each_Feature">
             <div className="img">
               <img src={svg3} alt="" />
             </div>
@@ -49,8 +190,8 @@ function Features() {
         </div>
       </div>
       <div className="each-feature">
-        <div className="feature feature1">
-          <div className="left">
+        <div className="feature feature1" ref={feature1_ref}>
+          <div className="left feature1_Info">
             <div className="feature-no gray">FEATURE 1</div>
             <div className="feature-name days-one">Loss proof Dex</div>
             <div className="feature-info">
@@ -110,17 +251,17 @@ function Features() {
               </div>
             </div>
           </div>
-          <div className="right">
+          <div className="right feature1_Img">
             <img src={feature1} alt="" />
           </div>
         </div>
-        <div className="feature feature2">
+        <div className="feature feature2" ref={feature2_ref}>
           <div className="blur"></div>
 
-          <div className="right">
+          <div className="right feature2Img">
             <img src={feature2} alt="" />
           </div>
-          <div className="left">
+          <div className="left feature2Info">
             <div className="feature-no gray">FEATURE 2</div>
             <div className="feature-name days-one">
               Loop Network Integration

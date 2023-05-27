@@ -7,6 +7,13 @@
   padding: 7rem 7vw;
 }
 
+.workHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
 .work .heading {
   font-size: 35px;
 }

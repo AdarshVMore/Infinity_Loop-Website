@@ -17,9 +17,6 @@
 .navbar .links .toggle-close {
   display: none;
 }
-.navbar .logo img {
-  /* height: 40px; */
-}
 
 .navbar .links {
   list-style: none;
@@ -50,9 +47,9 @@
   }
   .navbar .toggle-open {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 30px;
-    right: 0;
+    right: 30px;
   }
   .navbar .links .toggle-close {
     display: block;
@@ -67,15 +64,15 @@
   }
   .navbar .active {
     display: block;
-    position: absolute;
+    position: fixed;
     z-index: 5;
-    right: 0px;
-    top: 15px;
+    right: 10px;
+    top: -5px;
     transform: translateX(0px);
-    background-color: rgba(246, 246, 246, 0.227);
+    background-color: rgb(22, 22, 22);
     /* filter: blur(10px); */
     /* backdrop-filter: blur(100px); */
-    /* width: 100%; */
+    width: 90vw;
     padding: 20px 10px;
     border-radius: 15px;
   }

@@ -14,7 +14,7 @@ function Footer() {
             <img src={logo} alt="" />
           </div>
           <div className="copyright">
-            ©2023 Look of Infinity . All rights reserved.
+            ©2023 Loop of Infinity . All rights reserved.
           </div>
           <div className="socials">
             <a href="https://twitter.com/loopofinfinity_" target="_blank">
@@ -38,14 +38,10 @@ function Footer() {
           <a href="">Privacy Policy</a>
         </div>
         <div className="col3">
-          <div className="heading">Suport</div>
+          <div className="heading">Support</div>
           <a href="https://t.me/loopofinfinity">Contact Us</a>
           {/* <a href="">Mail Us</a>
           <a href="">Whatsapp Us</a> */}
-        </div>
-        <div className="col4">
-          <input type="email" />
-          <button>Get Updates</button>
         </div>
       </div>
     </div>

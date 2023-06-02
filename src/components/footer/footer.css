@@ -45,6 +45,10 @@ a {
   display: flex;
 }
 
+.col3 {
+  transform: translateY(-20px);
+}
+
 .col4 input {
   width: 200px;
   /* height: 30px; */

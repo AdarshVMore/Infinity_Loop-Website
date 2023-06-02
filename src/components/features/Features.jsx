@@ -163,27 +163,42 @@ function Features() {
             <div className="img">
               <img src={svg1} alt="" />
             </div>
-            <div className="name">Earn Crypto</div>
+            <div className="name">Play</div>
             <div className="info gray">
-              Players can earn LOI tokens while racing in the game
+              Players can participate in the tournament as a single player or
+              with their team to compete with others in 3 game modes as Street
+              Racing, Lap Racing, Do or Die
             </div>
           </div>
           <div className="each 1 each_Feature">
             <div className="img">
               <img src={svg2} alt="" />
             </div>
-            <div className="name">Decentralised</div>
+            <div className="name">Create</div>
             <div className="info gray">
-              The game operates on a decentralized blockchain network
+              Players can create their own in game assets such as garage, cars
+              and tracks
+            </div>
+          </div>
+          <div className="each 1 each_Feature">
+            <div className="img">
+              <img src={svg2} alt="" />
+            </div>
+            <div className="name">Own</div>
+            <div className="info gray">
+              Players can own in-game assets such as cars mechanical parts ,
+              garage space and other items in order to trade them on the market
+              place
             </div>
           </div>
           <div className="each 1 each_Feature">
             <div className="img">
               <img src={svg3} alt="" />
             </div>
-            <div className="name">Rewards</div>
+            <div className="name">Earn</div>
             <div className="info gray">
-              Players receive various rewards, including LOI tokens
+              Players can earn LOI Tokens by Participating in the tournaments
+              and the events to share the price pool.
             </div>
           </div>
           <div className="blur"></div>
@@ -261,7 +276,7 @@ function Features() {
           <div className="right feature2Img">
             <img src={feature2} alt="" />
           </div>
-          <div className="left feature2Info">
+          <div className="left feature2Info" id="loopintegration">
             <div className="feature-no gray">FEATURE 2</div>
             <div className="feature-name days-one">
               Loop Network Integration

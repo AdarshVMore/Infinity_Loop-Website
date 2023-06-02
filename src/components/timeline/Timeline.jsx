@@ -155,8 +155,8 @@ function Timeline() {
                   <div className="point-name">Deploy Token Smart Contract</div>
                   <div className="point-description">
                     Develop and deploy a secure and audited smart contract for
-                    the game's security issues "LOI Token" , on a suitable
-                    blockchain platform.
+                    the game's security issues "LOI Token" on a Polygon and
+                    Ethereum blockchain Networks.
                   </div>
                 </div>
                 <div className="circle"></div>
@@ -251,18 +251,6 @@ function Timeline() {
                 <div className="circle"></div>
 
                 <div className="right">
-                  <div className="point-name">Coinmarketcap Listing</div>
-                  <div className="point-description">
-                    Apply for listing on reputable cryptocurrency data platforms
-                    like Coinmarketcap to increase visibility and credibility.{" "}
-                    <br />
-                    Provide the necessary information and documentation required
-                    for the listing process.
-                  </div>
-                </div>
-              </div>
-              <div className="point">
-                <div className="left">
                   <div className="point-name">50K Holders </div>
                   <div className="point-description">
                     Execute marketing campaigns to attract a significant number
@@ -272,9 +260,6 @@ function Timeline() {
                     forums, and live events to foster trust and loyalty.
                   </div>
                 </div>
-                <div className="circle"></div>
-
-                <div className="right"></div>
               </div>
             </div>
           </>

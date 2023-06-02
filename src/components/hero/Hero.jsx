@@ -9,8 +9,8 @@ function Hero() {
         <div className="heading days-one">
           <p>
             <span>
-              Rev your engines, <br /> race to the <br /> future with <br />{" "}
-              Loop of Infinity
+              Rev your engines <br /> race to the <br /> future with <br /> Loop
+              of Infinity
             </span>
           </p>
         </div>
@@ -25,7 +25,7 @@ function Hero() {
           <img src={car} alt="car" />
         </div>
         <div className="btns">
-          <button className="register-btn">Buy Tokens</button>
+          <button className="register-btn">PRE-IEO Token Sale</button>
           {/* <button className="join-btn">Join Waitlist</button> */}
         </div>
       </div>

@@ -25,8 +25,8 @@ function Hero() {
           <img src={car} alt="car" />
         </div>
         <div className="btns">
-          <button className="register-btn">Register</button>
-          <button className="join-btn">Join Waitlist</button>
+          <button className="register-btn">Buy Tokens</button>
+          {/* <button className="join-btn">Join Waitlist</button> */}
         </div>
       </div>
       <div className="right">

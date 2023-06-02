@@ -52,8 +52,9 @@
 }
 
 .work img {
-  width: 350px;
-  border-radius: 30px;
+  min-width: 300px;
+  width: 23vw;
+  border-radius: 20px;
 }
 .work .blur {
   width: 400px;

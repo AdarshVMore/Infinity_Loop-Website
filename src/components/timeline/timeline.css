@@ -8,6 +8,15 @@
   background-color: #000000;
   margin: 10rem 0;
 }
+.timelineHeader {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+}
 ul li {
   list-style: none;
 }
@@ -27,8 +36,6 @@ ul li {
   justify-content: center;
   border-radius: 100px;
   gap: 5px;
-  /* background-color: #0f1547; */
-  /* border: 1px solid #1d2885; */
 }
 .timeline .toggle-btns .toggle {
   position: absolute;
@@ -37,12 +44,20 @@ ul li {
   background-color: #394dff;
   width: 100px;
   height: 38px;
-  /* transform: translateX(108px); */
-  /* transform: translateX(-5px); */
-  transform: translateX(-113px);
   transition: 0.3s ease-in-out;
   /* left: 0; */
 }
+
+.timeline .toggle-btns .p1 {
+  transform: translateX(-113px);
+}
+.timeline .toggle-btns .p2 {
+  transform: translateX(-5px);
+}
+.timeline .toggle-btns .p3 {
+  transform: translateX(108px);
+}
+
 .timeline .toggle-btns p {
   padding: 9px 20px;
   position: relative;
@@ -50,10 +65,7 @@ ul li {
   border-radius: 100px;
   cursor: pointer;
 }
-.timeline .toggle-btns p:hover {
-  background-color: #394dff3c;
-  transition: 000.5s ease-in-out;
-}
+
 @media (max-width: 600px) {
   .timeline .heading {
     /* font-size: 25px; */
@@ -61,5 +73,119 @@ ul li {
   }
   .timeline .sub-heading {
     width: 90%;
+  }
+}
+
+/* =============================  Each Phase  ======================== */
+
+.phases {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.phases .phase-no {
+  font-size: 22px;
+  font-family: "Days One", sans-serif;
+  margin: 50px 0;
+}
+.phases .line {
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  width: 1px;
+  /* border: 1px solid white; */
+  height: 78%;
+  background: rgb(70, 70, 70);
+  background: linear-gradient(
+    0deg,
+    rgba(70, 70, 70, 0.34226190476190477) 0%,
+    rgba(83, 83, 83, 1) 6%,
+    rgba(61, 61, 61, 1) 93%,
+    rgba(61, 61, 61, 0.4206932773109243) 100%
+  );
+}
+.phases .each-point {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.phases .each-point .point {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 2rem;
+}
+
+.phases .each-point .point .left {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100px;
+  gap: 2rem;
+  text-align: right;
+}
+
+.phases .each-point .point .right .point-name {
+  text-align: left;
+}
+.phases .each-point .point .right {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100px;
+  gap: 2rem;
+  text-align: left;
+}
+
+.phases .each-point .point .circle {
+  position: relative;
+  z-index: 5;
+  width: 10px;
+  height: 10px;
+  background-color: gray;
+  border: 5px solid black;
+  border-radius: 100px;
+}
+
+.phases .each-point .point .left .point-name,
+.phases .each-point .point .point-name {
+  font-family: "Days One", sans-serif;
+  text-align: right;
+  width: 100%;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.phases .each-point .point .point-description {
+  color: gray;
+  font-size: 15px;
+}
+
+@media (max-width: 700px) {
+  .phases .line {
+    transform: translateY(-40px);
+  }
+  .phases .each-point .point {
+    gap: 1rem;
+  }
+  .phases .each-point .point .right {
+    gap: 1rem;
+    width: 40%;
+  }
+  .phases .each-point .point .left {
+    gap: 1rem;
+    width: 40%;
+  }
+
+  .phases .each-point .point .left .point-name,
+  .phases .each-point .point .point-name {
+    font-size: 16px;
   }
 }

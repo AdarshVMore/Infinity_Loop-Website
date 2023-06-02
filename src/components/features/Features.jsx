@@ -155,8 +155,8 @@ function Features() {
         <div className="heading days-one">Features</div>
         <p className="info gray">
           Players can race against each other, compete in tournaments, and win
-          rewards in the form of cryptocurrency tokens, which can be traded or
-          used within the game ecosystem
+          rewards in the form of LOI tokens, which can be traded or used within
+          the game ecosystem
         </p>
         <div className="bottom " ref={eachFeatureRef}>
           <div className="each 1 each_Feature">
@@ -165,7 +165,7 @@ function Features() {
             </div>
             <div className="name">Earn Crypto</div>
             <div className="info gray">
-              Players can earn cryptocurrencies while racing in the game
+              Players can earn LOI tokens while racing in the game
             </div>
           </div>
           <div className="each 1 each_Feature">
@@ -183,7 +183,7 @@ function Features() {
             </div>
             <div className="name">Rewards</div>
             <div className="info gray">
-              Players receive various rewards, including cryptocurrencies
+              Players receive various rewards, including LOI tokens
             </div>
           </div>
           <div className="blur"></div>
@@ -195,7 +195,7 @@ function Features() {
             <div className="feature-no gray">FEATURE 1</div>
             <div className="feature-name days-one">Loss proof Dex</div>
             <div className="feature-info">
-              covers up to 60% of user losses in case of market volatility. This
+              covers up to 60% of user losses in case of security issues. This
               ensures that players can enjoy the game without worrying about
               losing their investments
             </div>
@@ -317,7 +317,7 @@ function Features() {
                 <div className="feature-text">
                   <div className="heading">Scalability and Performance</div>
                   <div className="info">
-                    ptimize integration for efficient operations across
+                    optimize integration for efficient operations across
                     different blockchain environments.{" "}
                   </div>
                 </div>

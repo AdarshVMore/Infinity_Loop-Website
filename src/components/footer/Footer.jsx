@@ -17,28 +17,31 @@ function Footer() {
             ©2023 Look of Infinity . All rights reserved.
           </div>
           <div className="socials">
-            <a href="">
+            <a href="https://twitter.com/loopofinfinity_" target="_blank">
               <img src={twitter} alt="" />
             </a>
-            <a href="">
+            <a href="https://t.me/loopofinfinity" target="_blank">
               <img src={telegram} alt="" />
             </a>
-            <a href="">
+            <a
+              href="https://www.linkedin.com/company/loop-of-infinity/"
+              target="_blank"
+            >
               <img src={linkedIn} alt="" />
             </a>
           </div>
         </div>
         <div className="col2">
           <div className="heading">Company</div>
-          <a href="">About us</a>
-          <a href="">Blog</a>
-          <a href="">Contact us</a>
+          {/* <a href="">About us</a> */}
+          <a href="">Terms and services</a>
+          <a href="">Privacy Policy</a>
         </div>
         <div className="col3">
           <div className="heading">Suport</div>
-          <a href="">Help Center</a>
-          <a href="">Terms of services</a>
-          <a href="">Privacy Policy</a>
+          <a href="https://t.me/loopofinfinity">Contact Us</a>
+          {/* <a href="">Mail Us</a>
+          <a href="">Whatsapp Us</a> */}
         </div>
         <div className="col4">
           <input type="email" />

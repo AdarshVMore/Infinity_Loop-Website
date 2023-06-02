@@ -67,8 +67,8 @@ function Works() {
           <p>
             The LOOP OF INFINITY is more than just a racing game - it's an
             entire ecosystem designed to empower both players and creators alike
-            . Marketplace will allow creators to sell their unique designs and
-            assets to other players
+            . Marketplace will allow creators to sell their assets to other
+            players
           </p>
         </div>
       </div>
@@ -89,7 +89,7 @@ function Works() {
           <div className="step gray">Play</div>
           <div className="text">
             Deposit LOI token in the game to participate in the tournaments, Buy
-            cars and Modifications
+            cars and do Modifications
           </div>
         </div>
         <div className="each-work">
@@ -98,8 +98,8 @@ function Works() {
           </div>
           <div className="step gray">Earn</div>
           <div className="text">
-            Enter in the race compete with others complete missions and earn the
-            reward
+            Enter in the race compete with other players complete missions and
+            earn the reward
           </div>
         </div>
       </div>

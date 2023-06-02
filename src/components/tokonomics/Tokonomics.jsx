@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./tokonomics.css";
 import pieChart from "../../assets/images/Pie Chart.svg";
+import pieChart2 from "../../assets/images/Frame 18New.svg";
+import pieChartMobile from "../../assets/images/Frame 19 Mobile.svg";
 // import innermost from "../../assets/images/innermost.png";
 // import innercircle from "../../assets/images/innerCicles.png";
 // import graphcircle from "../../assets/images/Graph circle.png";
 
 function Tokonomics() {
+  const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setViewportWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   const graph_info = [
     {
       color: "5552A5",
@@ -52,17 +68,22 @@ function Tokonomics() {
   ];
 
   return (
-    <div className="tokonomics">
+    <div className="tokonomics" id="tokonomics">
       <div className="heading days-one">Tokenomics</div>
       <div className="sub-heading gray">
         <p>
-          "Experience the Power of LOI Unlock Limitless Possibilities with our
-          Revolutionary Token, <br /> Empowering Communities and Fueling
+          Experience the Power of LOI by Unlocking Limitless Possibilities with
+          our Revolutionary Token, <br /> Empowering Communities and Fueling
           Innovations!
         </p>
       </div>
       <div className="chart-img">
-        <img src={pieChart} alt="" />
+        {/* Render different image based on viewport width */}
+        {viewportWidth < 768 ? (
+          <img src={pieChartMobile} alt="Mobile Image" />
+        ) : (
+          <img src={pieChart2} alt="Desktop Image" />
+        )}
         {/* <img src={innermost} alt="" className="innermost" />
         <img src={innercircle} alt="" className="innercircle" />
         <img src={graphcircle} alt="" className="graphcircle" /> */}

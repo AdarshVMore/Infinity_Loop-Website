@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./timeline.css";
-import dumy from "../../assets/images/grayrectangle.jpeg";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";

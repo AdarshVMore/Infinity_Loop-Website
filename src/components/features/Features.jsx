@@ -3,6 +3,7 @@ import "./features.css";
 import svg1 from "../../assets/images/Icon.svg";
 import svg2 from "../../assets/images/Icon-1.svg";
 import svg3 from "../../assets/images/Icon-2.svg";
+import nft from "../../assets/images/NFT.svg";
 import feature from "../../assets/images/Feature Icon with circle.svg";
 import feature1 from "../../assets/images/feature1.png";
 import feature2 from "../../assets/images/feature2.jpg";
@@ -12,36 +13,36 @@ import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger);
 
 function Features() {
-  const featureRef = useRef(null);
+  // const featureRef = useRef(null);
   const eachFeatureRef = useRef(null);
   const feature2_ref = useRef(null);
   const feature1_ref = useRef(null);
   useEffect(() => {
-    const featureHeader = featureRef.current;
+    // const featureHeader = featureRef.current;
     const portArticle = eachFeatureRef.current;
     const feature1 = feature2_ref.current;
     const feature2 = feature1_ref.current;
 
-    gsap.fromTo(
-      ".featureHeader",
-      {
-        opacity: 0,
-        y: 10,
-      },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        stagger: 0.1,
-        scrollTrigger: {
-          trigger: featureHeader,
-          start: "top 70%",
-          end: "bottom 20%",
-          toggleActions: "restart reverse restart reverse",
-          // markers: true,
-        },
-      }
-    );
+    // gsap.fromTo(
+    //   ".featureHeader",
+    //   {
+    //     opacity: 0,
+    //     y: 10,
+    //   },
+    //   {
+    //     opacity: 1,
+    //     y: 0,
+    //     duration: 1,
+    //     stagger: 0.1,
+    //     scrollTrigger: {
+    //       trigger: featureHeader,
+    //       start: "top 70%",
+    //       end: "bottom 20%",
+    //       toggleActions: "restart reverse restart reverse",
+    //       // markers: true,
+    //     },
+    //   }
+    // );
     gsap.fromTo(
       ".each_Feature",
       {
@@ -150,7 +151,7 @@ function Features() {
     );
   });
   return (
-    <div className="features" ref={featureRef}>
+    <div className="features">
       <div className="top featureHeader">
         <div className="heading days-one">Features</div>
         <p className="info gray">
@@ -182,7 +183,7 @@ function Features() {
           </div>
           <div className="each 1 each_Feature">
             <div className="img">
-              <img src={svg2} alt="" />
+              <img src={nft} alt="" />
             </div>
             <div className="name">Own</div>
             <div className="info gray">
@@ -208,7 +209,7 @@ function Features() {
         <div className="feature feature1" ref={feature1_ref}>
           <div className="left feature1_Info">
             <div className="feature-no gray">FEATURE 1</div>
-            <div className="feature-name days-one">Loss proof Dex</div>
+            <div className="feature-name days-one">Loss proof DEX</div>
             <div className="feature-info">
               covers up to 60% of user losses in case of security issues. This
               ensures that players can enjoy the game without worrying about

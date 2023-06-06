@@ -1,10 +1,16 @@
 import React from "react";
 import "./hero.css";
-import car from "../../assets/images/car3.png";
+import video from "../../assets/video/videoBG.mp4";
+import videoMobile from "../../assets/video/videoMobile.mp4";
 
 function Hero() {
   return (
     <div className="hero">
+      <div className="video">
+        <video autoPlay loop muted plays-inline className="bgc-video">
+          <source src={video} />
+        </video>
+      </div>
       <div className="left">
         <div className="heading days-one">
           <p>
@@ -22,7 +28,10 @@ function Hero() {
           </p>
         </div>
         <div className="hide-img">
-          <img src={car} alt="car" />
+          {/* <img src={car} alt="car" /> */}
+          <video autoPlay loop muted plays-inline className="bgc-video">
+            <source src={videoMobile} />
+          </video>
         </div>
         <div className="btns">
           <button className="register-btn">PRE-IEO Token Sale</button>
@@ -30,7 +39,8 @@ function Hero() {
         </div>
       </div>
       <div className="right">
-        <img src={car} alt="car" />
+        {/* <img src={car} alt="car" /> */}
+
         <div className="blur"></div>
       </div>
     </div>

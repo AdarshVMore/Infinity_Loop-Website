@@ -77,9 +77,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 25px;
+  font-size: 20px;
   color: white;
-  padding: 3px 15px 0 10px;
+  padding: 3px 10px 0 10px;
+  text-align: right;
 }
 
 .swaping-input .swap-from .middle input {
@@ -89,7 +90,7 @@
   color: white;
   font-size: 20px;
   outline: none;
-  text-align: end;
+  text-align: right;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -246,4 +247,62 @@ input::-webkit-inner-spin-button {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+.middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+
+Select {
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  font: 19px;
+  border: none;
+  outline: none;
+}
+option {
+  color: black;
+  outline: none;
+  border: none;
+}
+
+.each-option {
+  display: flex;
+  color: black;
+  align-items: center;
+  gap: 5px;
+  background-color: transparent;
+  font-size: 18px;
+  margin: 0;
+  /* padding: 5px; */
+  overflow-x: hidden;
+}
+.each-option img {
+  width: 20px;
+  height: 20px;
+}
+/* 
+.each-option p:hover .each-option {
+  background-color: #0e121b;
+} */
+
+button {
+  border: none;
+  outline: none;
+}
+button .info {
+  width: 100%;
+}
+
+button .info p {
+  text-align: center;
+  width: 100%;
+}
+
+input::placeholder {
+  font-size: 15px;
 }

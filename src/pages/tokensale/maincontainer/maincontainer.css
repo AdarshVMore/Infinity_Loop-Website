@@ -1,0 +1,19 @@
+.tokensale-maincontainer {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5rem;
+}
+.tokensale-maincontainer .chart-info {
+  margin-top: 50px;
+}
+.tokensale-maincontainer img {
+  /* display: none; */
+}
+.tokensale-maincontainer .footer {
+  margin: 0;
+  width: 100vw;
+  padding: 30px 0;
+}

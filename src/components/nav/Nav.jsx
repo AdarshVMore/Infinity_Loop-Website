@@ -10,7 +10,9 @@ const Nav = () => {
   return (
     <nav className="navbar">
       <div className="logo">
-        <img src={logo} alt="Logo" />
+        <a href="/">
+          <img src={logo} alt="Logo" />
+        </a>
       </div>
       <div
         onClick={() => {
@@ -42,7 +44,7 @@ const Nav = () => {
         </li>
         <li>
           {/* <a href="https://loopofinfinitydex.netlify.app/dex">LoopSwap</a> */}
-          <a href="/dex">LoopSwap</a>
+          <a href="/dexx">LoopSwap</a>
         </li>
         <li>
           <a href="#loopintegration">Loop Network</a>

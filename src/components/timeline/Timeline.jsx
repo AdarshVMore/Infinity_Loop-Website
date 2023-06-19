@@ -242,13 +242,11 @@ function Timeline() {
                   </div>
                 </div>
                 <div className="circle"></div>
-
                 <div className="right"></div>
               </div>
               <div className="point">
                 <div className="left"></div>
                 <div className="circle"></div>
-
                 <div className="right">
                   <div className="point-name">50K Holders </div>
                   <div className="point-description">
@@ -298,7 +296,7 @@ function Timeline() {
                   <div className="point-description">
                     Develop and launch a marketplace within Loop of Infinity
                     where players can buy, sell, and trade in-game items,
-                    characters, or assets using the Infinity Token.
+                    characters, or assets using the LOI Token.
                     <br />
                     Ensure the marketplace is user-friendly, secure, and
                     provides a seamless trading experience.

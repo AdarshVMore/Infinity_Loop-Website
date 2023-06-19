@@ -34,7 +34,9 @@ function Hero() {
           </video>
         </div>
         <div className="btns">
-          <button className="register-btn">PRE-IEO Token Sale</button>
+          <button className="register-btn">
+            <a href="/token-sale">PRE-IEO Token Sale</a>
+          </button>
           {/* <button className="join-btn">Join Waitlist</button> */}
         </div>
       </div>

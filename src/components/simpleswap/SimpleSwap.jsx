@@ -10,6 +10,27 @@ import Select from "react-select";
 
 function SimpleSwap({ onTokenSelect }) {
   const [selectedLink, setSelectedLink] = useState(0);
+  const customStyles = {
+    control: (provided) => ({
+      ...provided,
+      borderRadius: "10px",
+      margin: "7px 0",
+      background: "#131823",
+      outline: "none",
+      border: "none",
+      padding: "4px 8px",
+      fontSize: "18px",
+      color: "white",
+      fontWeight: "600",
+    }),
+    option: (provided) => ({
+      ...provided,
+      color: "white",
+    }),
+  };
+  const getOptionLabel = (option) => {
+    return <span style={{ color: "white" }}>{option.label}</span>;
+  };
 
   const [tokens, setTokens] = useState({});
   const [tokenlist, setTokenlist] = useState([]);
@@ -46,7 +67,7 @@ function SimpleSwap({ onTokenSelect }) {
     value: token.address,
 
     label: (
-      <div>
+      <div className="each-option">
         <img src={token.logoURI} alt={token.name} className="logo1"></img>
         <p key={token.address}>{token.symbol}</p>
       </div>
@@ -56,7 +77,7 @@ function SimpleSwap({ onTokenSelect }) {
     value: token.address,
     s: token,
     label: (
-      <div>
+      <div className="each-option">
         <img src={token.logoURI} alt={token.name} className="logo1"></img>
         <p key={token.address}>{token.symbol}</p>
       </div>
@@ -73,8 +94,8 @@ function SimpleSwap({ onTokenSelect }) {
   const setevent = (props) => {
     setswap(props);
   };
-  var k = "";
-  var j = "";
+  var k = "0";
+  var j = "0";
   const [fromtoken, setfromtoken] = useState(j);
   const [totoken, settoken] = useState(k);
   var exchange = async (fromaddress, toaddress, amount) => {
@@ -121,17 +142,6 @@ function SimpleSwap({ onTokenSelect }) {
               Limit
             </p>{" "}
           </a>
-          <a
-            href="/dex/p2pswap"
-            onClick={() => {
-              setSelectedLink(2);
-            }}
-          >
-            {" "}
-            <p className={selectedLink === 2 ? "selected-link" : ""}>
-              P2P
-            </p>{" "}
-          </a>
         </div>
         <div className="right">
           <div className="btn reload-btn">
@@ -157,20 +167,21 @@ function SimpleSwap({ onTokenSelect }) {
           <div className="middle">
             <Select
               value={swap}
+              styles={customStyles}
+              className="select"
               name="fromtoken"
-              className="middle"
               onChange={setevent}
               options={options}
+              getOptionLabel={getOptionLabel}
             />
 
             <input
               text={Number}
               onChange={setevent3}
               value={amount}
-              placeholder="Enter Exchanged coins"
+              placeholder="Enter Exchange coins"
               required={true}
             ></input>
-            <p>{fromtoken}</p>
           </div>
 
           <div className="bottom">
@@ -204,7 +215,8 @@ function SimpleSwap({ onTokenSelect }) {
              */}
             <Select
               value={swap2}
-              className="middle"
+              styles={customStyles}
+              className="select"
               onChange={setevent2}
               options={options2}
             />
@@ -217,13 +229,7 @@ function SimpleSwap({ onTokenSelect }) {
           </div>
         </div>
       </div>
-      {/* <div className="live-crypto-price">
-        <div className="info">
-          <p>1 DAI = 0.000551241 WETH ($1)</p>
-          <p>$0</p>
-        </div>
-        <RiArrowDropDownLine color="white" size={24} />
-      </div> */}
+
       <button
         onClick={() => {
           exchange(swap.value, swap2.value, amount);
@@ -232,96 +238,11 @@ function SimpleSwap({ onTokenSelect }) {
       >
         <div className="info">
           <p>Convert</p>
-          <p></p>
         </div>
       </button>
       <div className="swap-button">
         <button>Insufficient WETH Balance</button>
       </div>
-
-      {/* {showOptions_from && (
-        <div className="crypto-options-from">
-          <div className="top">
-            <div
-              className="back"
-              onClick={() => {
-                setShowOptions_from(false);
-              }}
-            >
-              <MdArrowBackIos />
-            </div>
-            <div className="text">Select a Token</div>
-            <div className="none"></div>
-          </div>
-          <hr />
-          <div className="bottom">
-            {cryptoApi.map((item, index) => (
-              <ul>
-                <li
-                  key={index}
-                  onClick={() => {
-                    setX(index);
-                    setShowOptions_from(false);
-                  }}
-                >
-                  <div className="left">
-                    <div className="logo">{item.logo}</div>
-                    <div className="inner-right">
-                      <div className="name">
-                        <p className="crypto-name">{item.name}</p>
-                        <p>{`0 ${item.name}`}</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="right">$0</div>
-                </li>
-              </ul>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {showOptions_to && (
-        <div className="crypto-options-from">
-          <div className="top">
-            <div
-              className="back"
-              onClick={() => {
-                setShowOptions_to(false);
-              }}
-            >
-              <MdArrowBackIos />
-            </div>
-            <div className="text">Select a Token</div>
-            <div className="none"></div>
-          </div>
-          <hr />
-          <div className="bottom">
-            {cryptoApi.map((item, index) => (
-              <ul>
-                <li
-                  key={index}
-                  onClick={() => {
-                    setY(index);
-                    setShowOptions_to(false);
-                  }}
-                >
-                  <div className="left">
-                    <div className="logo">{item.logo}</div>
-                    <div className="inner-right">
-                      <div className="name">
-                        <p className="crypto-name">{item.name}</p>
-                        <p>{`0 ${item.name}`}</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="right">$0</div>
-                </li>
-              </ul>
-            ))}
-          </div>
-        </div>
-      )} */}
     </div>
   );
 }

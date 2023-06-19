@@ -1,0 +1,14 @@
+.navbar button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 15px;
+  border-radius: 100px;
+  transform: translateY(-10px);
+}
+.navbar .no-hover:hover {
+  background-color: transparent;
+}
+.navbar .no-hover {
+  color: white;
+}

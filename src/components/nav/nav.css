@@ -40,7 +40,7 @@
 
 @media (max-width: 1200px) {
   .navbar {
-    margin: 0 0 0 40px;
+    margin: 0 0 0 20px;
   }
   .navbar .hide {
     display: none;

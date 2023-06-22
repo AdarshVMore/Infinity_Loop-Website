@@ -16,6 +16,7 @@ import { configureChains, createConfig, WagmiConfig } from "wagmi";
 import { mainnet, polygon, optimism, arbitrum } from "wagmi/chains";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
+import Policies from "./pages/policies/Policies";
 
 const { chains, publicClient } = configureChains(
   [mainnet, polygon, optimism, arbitrum],
@@ -52,6 +53,7 @@ function App() {
               <Route path="/dex*" element={<Dex />} />
               <Route path="/dexx" element={<CommingSoon />} />
               <Route path="/token-sale" element={<TokenSale />} />
+              <Route path="/policies" element={<Policies />} />
             </Routes>
           </BrowserRouter>
         </div>

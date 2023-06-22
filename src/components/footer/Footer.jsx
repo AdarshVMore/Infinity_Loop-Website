@@ -34,8 +34,10 @@ function Footer() {
         <div className="col2">
           <div className="heading">Company</div>
           {/* <a href="">About us</a> */}
-          <a href="">Terms and services</a>
-          <a href="">Privacy Policy</a>
+          <a href="/policies">Anti-Money Laundring</a>
+          <a href="/policies">Terms and services</a>
+          <a href="/policies">Privacy Policy</a>
+          <a href="/policies">Disclaimer</a>
         </div>
         <div className="col3">
           <div className="heading">Support</div>

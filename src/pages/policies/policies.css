@@ -1,0 +1,43 @@
+.policies-maincontainer {
+  margin-top: 200px;
+  /* width: 100vw; */
+  margin: 200px 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+.policies-maincontainer h1 {
+  text-align: center;
+  text-decoration-line: underline;
+}
+.policies-maincontainer .info p {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.policies-maincontainer ol {
+  background-color: #1e1e1e;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 20px;
+  /* list-style-position: inside; */
+}
+.policies-maincontainer ol li {
+  padding: 10px 30px;
+}
+.policies-maincontainer .each-info {
+  margin-top: 40px;
+}
+
+.policies-maincontainer .info-3 {
+  margin-top: 50px;
+}
+
+.policies-maincontainer .info-3 p {
+  margin: 0 20px;
+}
+
+.policies-maincontainer .info-3 p b {
+  display: block;
+  margin: 20px 0 10px -20px;
+}

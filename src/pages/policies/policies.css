@@ -24,6 +24,7 @@
 }
 .policies-maincontainer ol li {
   padding: 10px 30px;
+  font-size: 16px;
 }
 .policies-maincontainer .each-info {
   margin-top: 40px;
@@ -40,4 +41,18 @@
 .policies-maincontainer .info-3 p b {
   display: block;
   margin: 20px 0 10px -20px;
+}
+
+@media (max-width: 1000px) {
+  .policies-maincontainer {
+    margin: 100px;
+  }
+}
+@media (max-width: 600px) {
+  .policies-maincontainer {
+    margin: 100px 20px;
+  }
+  .policies-maincontainer .info p {
+    font-size: 16px;
+  }
 }

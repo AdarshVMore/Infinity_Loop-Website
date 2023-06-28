@@ -1,6 +1,5 @@
 .footer .all-links {
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 7vw;
   flex-wrap: wrap;
@@ -45,9 +44,9 @@ a {
   display: flex;
 }
 
-.col3 {
-  transform: translateY(-20px);
-}
+/* .col3 {
+  transform: translateY(-65px);
+} */
 
 .col4 input {
   width: 200px;

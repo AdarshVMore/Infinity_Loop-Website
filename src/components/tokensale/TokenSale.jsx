@@ -116,15 +116,15 @@ function TokenSale() {
             <div className="some-info">
               <div className="each-info">
                 <p>Current LOI Price</p>
-                <p>$0.00258</p>
+                <p>$0.008</p>
               </div>
               <div className="each-info">
                 <p>Minimum purchase</p>
-                <p>$0.00258</p>
+                <p>$10</p>
               </div>
               <div className="each-info">
                 <p>Purchace Limit per wallet</p>
-                <p>$0.00258</p>
+                <p>$10000</p>
               </div>
             </div>
 

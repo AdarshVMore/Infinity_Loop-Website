@@ -59,6 +59,9 @@
   flex-direction: column;
   gap: 1rem;
 }
+.token-sale .right .each-info p {
+  font-size: 16px;
+}
 .token-sale .bottom .right .slider-bg {
   height: 30px;
   width: 100%;
@@ -93,7 +96,7 @@
 .loi-counter {
   background-color: #323232;
   justify-content: space-between;
-  padding: 20px 0px;
+  padding: 20px 10px;
   border-radius: 20px;
   margin: 10px 0;
 }
@@ -117,6 +120,9 @@
 .token-sale .bottom .right button:hover {
   background-color: blue;
   transition: 0.3s ease-in-out;
+}
+.token-sale .bottom .right .each-info p {
+  font-size: 15px;
 }
 /* =============================================  Container 2  ============================================== */
 

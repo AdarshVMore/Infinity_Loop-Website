@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Landing from "./pages/landing/Landing";
 import Dex from "./pages/dex/Dex";
 import CommingSoon from "./pages/comming_soon/CommingSoon";
-import TokenSale from "./pages/tokensale/TokenSale";
+import TokenSale from "./pages/tokensale/TokenSale.tsx";
 
 import "@rainbow-me/rainbowkit/styles.css";
 import {

@@ -2,6 +2,7 @@
   "name": "infinity_loop",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://loopofinfinity.com/",
   "dependencies": {
     "@quadrata/client-react": "^1.0.5",
     "@quadrata/contracts": "^1.0.3",

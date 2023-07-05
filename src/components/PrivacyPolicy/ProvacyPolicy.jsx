@@ -123,10 +123,9 @@ function ProvacyPolicy() {
         </p>
         <p>
           <b>Children's Privacy :</b>Loop of Infinity is not intended for
-          individuals under the age of [insert minimum age requirement]. We do
-          not knowingly collect personal information from children. If you
-          believe that we have inadvertently collected information from a child,
-          please contact us immediately
+          individuals under the age of 16. We do not knowingly collect personal
+          information from children. If you believe that we have inadvertently
+          collected information from a child, please contact us immediately
         </p>
         <p>
           <b>Updates to Privacy Policy:</b>We may update this Privacy Policy

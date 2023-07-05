@@ -3,8 +3,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Landing from "./pages/landing/Landing";
 import Dex from "./pages/dex/Dex";
-import CommingSoon from "./pages/comming_soon/CommingSoon";
+import CommingSoonDex from "./pages/comming_soon/CommingSoonDex";
 import TokenSale from "./pages/tokensale/TokenSale.tsx";
+import Dashboard from "./pages/dashboard/Dashboard";
 
 import "@rainbow-me/rainbowkit/styles.css";
 import {
@@ -17,6 +18,8 @@ import { mainnet, polygon, optimism, arbitrum } from "wagmi/chains";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
 import Policies from "./pages/policies/Policies";
+import CommingSoonTokenSale from "./pages/comming_soon/CommingSoonTokenSale";
+import React from "react";
 
 const { chains, publicClient } = configureChains(
   [mainnet, polygon, optimism, arbitrum],
@@ -51,9 +54,12 @@ function App() {
             <Routes>
               <Route path="" element={<Landing />} />
               <Route path="/dex*" element={<Dex />} />
-              <Route path="/dexx" element={<CommingSoon />} />
+              {/* <Route path="/dexx" element={<CommingSoonDex />} /> */}
               <Route path="/token-sale" element={<TokenSale />} />
+              {/* <Route path="/token-sale" element={<CommingSoonTokenSale />} /> */}
+
               <Route path="/policies" element={<Policies />} />
+              <Route path="/dashboard" element={<Dashboard />} />
             </Routes>
           </BrowserRouter>
         </div>

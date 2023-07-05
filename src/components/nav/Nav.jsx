@@ -44,7 +44,7 @@ const Nav = () => {
         </li>
         <li>
           {/* <a href="https://loopofinfinitydex.netlify.app/dex">LoopSwap</a> */}
-          <a href="/dexx">LoopSwap</a>
+          <a href="/dex">LoopSwap</a>
         </li>
         <li>
           <a href="#loopintegration">Loop Network</a>

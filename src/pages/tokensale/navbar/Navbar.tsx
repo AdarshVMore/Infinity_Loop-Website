@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { id, parseUnits } from "ethers/lib/utils";
 import { useQuery } from "react-query";
 import logo from "../../../assets/images/logo.png";
+import "./Navbar.css";
 import "@quadrata/core-react/lib/cjs/quadrata-ui.min.css";
 import {
   useWalletClient,
@@ -196,12 +197,15 @@ export const Navbar: React.FC<{ accessToken: string }> = ({ accessToken }) => {
             <img src={logo} alt="Logo" />
           </div>
         </a>
-        <div className="connect-btn">
+        <div className="tokensale-nav-right">
           <ConnectButton accountStatus="address" />
+          <a href="/dashboard">
+            <div className="profile-img"></div>
+          </a>
         </div>
       </nav>
-      {!account ? <p>Connect Wallet</p> : ""}
-      {isConnecting ? <p>loading...</p> : ""}
+      {/* {!account ? <p>Connect Wallet</p> : ""}
+      {isConnecting ? <p>loading...</p> : ""} */}
       {account
         ? attributesToClaim.length > 0 && (
             <QuadClient
